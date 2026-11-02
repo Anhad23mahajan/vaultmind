@@ -30,7 +30,7 @@ interface Database {
 final class PostgresDatabase implements Database {
     private static final String URL      = env("VAULTMIND_DB_URL",      "jdbc:postgresql://localhost:5432/vaultmind");
     private static final String USER     = env("VAULTMIND_DB_USER",     "postgres");
-    private static final String PASSWORD = env("VAULTMIND_DB_PASSWORD", "Anhad@14576");
+    private static final String PASSWORD = env("VAULTMIND_DB_PASSWORD", "change-me");
     private Connection connection;
     @Override
     public void init() throws SQLException {
